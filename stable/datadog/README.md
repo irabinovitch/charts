@@ -40,6 +40,8 @@ The following tables lists the configurable parameters of the Datadog chart and 
 |      Parameter              |          Description               |                         Default           |
 |-----------------------------|------------------------------------|-------------------------------------------|
 | `datadog.apiKey`            | Your Datadog API key               |  `Nil` You must provide your own key      |
+| `datadog.logLevel`          | Set logging verbosity (CRITICAL, ERROR, WARNING, INFO, DEBUG) |    `INFO`      |
+| `datadog.nonLocalTraffic`   | Enables statsd reporting from remote hosts (`true`, `false`) | `true`          |
 | `image.repository`          | The image repository to pull from  | `datadog/docker-dd-agent`                 |
 | `image.tag`                 | The image tag to pull              | `latest`                                  |
 | `imagePullPolicy`           | Image pull policy                  | `IfNotPresent`                            |
